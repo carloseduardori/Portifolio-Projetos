@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+body{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg);
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+button{
+    cursor: pointer;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 40px 0px 40px;
+}
+
+#logo img{
+    margin-right: 1060px;
+    max-width: 110px;
+    max-height: 110px;
+}
+
+#entrar button{
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#cartao{
+    margin: 20px 455px 0px 455px;
+    background-color: white;
+    text-align: left;
+    padding: 40px;
+}
+
+#cartao h1{
+    font-size: 32px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#cartao p{
+    font-size: 16px;
+    color: #333333;
+    line-height: 24px;
+    font-weight: 400;   
+}
+
+#cartao button{
+    margin-top: 30px;
+    border-radius: 3px;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 20px;
+    background-color: #0080ff;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 55%);
+}
+
+footer{
+    background-color: transparent;
+    padding-top: 30px;
+}
+#final{
+    background-color: transparent;
+    color: #737373;
+    margin: 0px 180px 20px 180px;
+    font-size: 13.5px;
+}
+#final a{
+    text-decoration: none;
+    color: #737373;
+}
+#final a:hover{
+    text-decoration: underline;
+}
+#final li{
+    list-style: none;
+    line-height: 35px;
+}
+.numero{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#final ul{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0px 43px 0px 0px;
+    width: 20%;
+}
+#language2{
+    width: 150px;
+    height: 50px;
+    color: #999;
+    background-color: rgba(0,0,0,.4);
+    border: 0.5px solid #333;
+    margin-right: 35px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#language2 option{
+    background-color: #aaa;
+}

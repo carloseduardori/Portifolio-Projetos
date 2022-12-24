@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+body{
+    background-image: url("../img/BR-pt-20221206-popsignuptwoweeks-perspective_alpha_website_medium\ \(1\).jpg");
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+button, .vamos{
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 130px;
+	border: 0;
+	border-top: 8px solid #333;
+}
+
+#promocao{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: #fff;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+}
+
+#promocao a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #0071eb;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#promocao b{
+    font-weight: 800;
+    font-size: 21px;
+}
+
+#novo{
+    font-weight: 600;
+    line-height: 15px;
+    background-color: #e50914;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    padding: 3px 8px 3px 8px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+#logo img{
+    margin-right: 870px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#language{
+    width: 120px;
+    height: 33px;
+    color: #fff;
+    background-color: rgba(0,0,0,.4);
+    border: 0.5px solid #fff;
+    margin-right: 35px;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+#language option{
+    background-color: #aaa;
+}
+
+#entrar button{
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px 8px 20px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#cartao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    height: 300px;
+    margin-top: 10%;
+}
+
+#cartao h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#cartao h2{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+#cartao h3{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#cartao input.email{
+    width: 450px;
+    text-align: left;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 22px 20px 20px 20px;
+}
+
+#cartao .vamos{
+    background: #e50914;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    border-style: none;
+    padding: 15px 20px 20px 20px;
+    border-radius: 3px;
+}
+
+#container-cartao h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 70px;
+    color: white;
+}
+
+#container-cartao p{
+    font-size: 26px;
+    line-height: 40px;
+    color: white;
+}
+
+#cartao2{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 460px;
+}
+
+#cartao2 img{
+    width: 550px;
+    height: 400px;
+    margin-left: 60px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+#cartao3{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 520px;
+}
+#cartao3 img{
+    width: 550px;
+    height: 400px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+#cartao4{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#cartao4 img{
+    width: 500px;
+    height: 360px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#cartao5{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 450px;
+}
+
+#cartao5 img{
+    width: 470px;
+    height: 350px;
+    margin-right: 70px;
+}
+
+#cartao6{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    justify-content: center;
+    padding: 80px 0px;
+}
+#botoes button{
+    font-size: 26px;
+    background-color: #303030;
+    color: white;
+    height: 75px;
+    margin-bottom: 10px;
+    padding: 0px 30px 0px 30px;
+    width: 60%;
+    border-style: none;
+    text-align: left;
+}
+
+#cartao6 h1{
+    margin-bottom: 30px;
+}
+#cartao6 h3{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+#cartao6 input{
+    width: 450px;
+    text-align: left;
+    border: 2px solid #aaa;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 21px 20px 10px 20px;
+}
+
+#cartao6 input#confirmar{
+    cursor: pointer;
+    background: #e50914;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    border-style: none;
+    padding: 15px 20px 10px 20px;
+    border-radius: 3px;
+    width: 13%;
+}
+footer{
+    background-color: black;
+    padding-top: 30px;
+}
+#final{
+    background-color: black;
+    color: #737373;
+    margin: 80px 220px 0px 220px;
+    padding-bottom: 20px;
+    font-size: 13.5px;
+}
+#final a{
+    text-decoration: none;
+    color: #737373;
+}
+#final a:hover{
+    text-decoration: underline;
+}
+#final li{
+    list-style: none;
+    line-height: 35px;
+}
+.numero{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#final ul{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0px 43px 0px 0px;
+    width: 20%;
+}
+#language2{
+    width: 150px;
+    height: 50px;
+    color: #999;
+    background-color: rgba(0,0,0,.4);
+    border: 0.5px solid #333;
+    margin-right: 35px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#language2 option{
+    background-color: #aaa;
+}
+
+.hr2{
+    margin-top: 0;
+    border: 0;
+    border-top: 8px solid #333;
+}
+
+.dropdown-content{
+    display: inline-block;
+    font-size: 26px;
+    background-color: #303030;
+    color: white;
+    margin-bottom: 10px;
+    padding: 20px 30px 20px 30px;
+    width: 60%;
+    border-style: none;
+    text-align: left;
+    display: none;
+}
+
+.dropdown-content a{
+    color: white;
+}
+#botoes button:focus{
+    margin-bottom: 2px;
+}
+.dropdown:focus + .dropdown-content{
+    display: inline-block;
+}
+
+
+
+
