@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
+
+body{
+    background-color: #1B1A17;
+    font-family:  'Inconsolata', monospace;;
+}
+
+header{
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    border-bottom: 2px solid #131211;
+}
+
+nav h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 39px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FF8303;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 55px;
+}
+
+nav a{
+    font-size: 20px;
+    color: #F0E3CA;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover{
+    color: #FF8303;
+}
+
+#informacao{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 40px 0px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px 20px 90px;
+    gap: 16px;
+}
+
+#sobre h1{
+    font-weight: 900;
+    color: #FF8303;
+    font-size: 60px;
+    line-height: 67px;
+}
+
+#sobre h2{
+    font-weight: 700;
+    color: #F0E3CA;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#sobre h3{
+    font-weight: 400;
+    color: #F0E3CA;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+#foto{
+    margin-top: 40px;
+}
+
+#foto span{
+    color: #A35709;
+    opacity: 0.5;
+}
+
+#historia{
+    border-top: 2px solid #131211;
+    border-bottom: 2px solid #131211;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+#historia h1{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #F0E3CA;
+}
+
+#minhas-habilidades{
+    margin-bottom: 100px;
+    border-bottom: 2px solid #131211;
+}
+
+#minhas-habilidades h1.titulo{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FF8303;
+    text-align: center;
+    line-height: 34px;
+    padding: 50px;
+}
+
+#habilidades{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #21201D;
+    height: 300px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.card h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.card img.hover{
+    display: none;
+}
+
+.card:hover > img.normal{
+    display: none;
+}
+
+.card:hover > img.hover{
+    display: block;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contatos h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FF8303;
+}
+
+#contatos ul{
+    list-style-type: none;
+}
+
+#contatos a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FF8303;
+}

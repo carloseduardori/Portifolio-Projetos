@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><xmp></Carlos Eduardo></xmp></h1>
+            <ul>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Meus Projetos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacao">
+            <div id="sobre">
+                <h1>Carlos Eduardo</h1>
+                <h2>Front-end Developer</h2>
+                <h3>Front-end developer em busca de projetos, <br> freelancer, e vaga de emprego</h3>
+            </div>
+            <div id="foto">
+                <span><xmp>let button_menu = document.querySelector(".header_button");
+let float_menu  = document.querySelector(".header_menu--float");
+
+let line_top   = document.querySelector(".header_button_line--top");
+let line_under = document.querySelector(".header_button_line--bottom");
+
+button_menu.isSelected = false;
+
+function addEffectWriting(element, time) {
+    let element_array = element.innerText.split("");
+
+    element.count     = 0;
+    element.innerText = "";
+
+    function writeSymbols() {
+    element.innerText += element_array[element.count];
+    element.count++;
+
+    if (element.count <= element_array.length) {
+        setTimeout(() => {
+        writeSymbols();
+        }, time);
+    } else if (element.count >= element_array.length) {
+        element.count     = 0;
+        element.innerText = "";
+
+        writeSymbols();
+    }
+}
+                    </xmp></span>
+                <img src="#" alt="#">
+            </div>
+        </section>
+
+        <section id="historia">
+            <img src="./img/Logo.png" alt="Retangulo">
+            <h1>Há alguns anos, me interessei por desenvolver sites e interfaces. Desde então, tenho aprimorado constantemente minhas habilidades. Agora desenvolvo websites e aplicações web por encomenda ou para mim.</h1>
+        </section>
+        <section id="minhas-habilidades">
+            <h1 class="titulo">Minhas Habilidades</h1>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon git.png" alt="GIT" class="normal">
+                    <img src="./img/icon git -- hover.png" alt="GIT" class="hover">
+                    <h1>Git</h1>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>Meus Projetos</h1>
+        </section>
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Carlos Eduardo></xmp></h1>
+           <h2>Se você gostou do meu trabalho e precisa de mim, estou pronto para conversar com você.</h2>
+        </div>
+        <div id="contatos">
+            <h1>Contatos</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="gmail"> <a href="mailto:carloseduardo2006r@gmail.com" target="_blank">carloseduardo2006r@gmail.com</a></li>
+                <li><a href="https://www.instagram.com/eduardozl.035/" target="_blank">@eduardozl.035</a></li>
+                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/carloseduardori" target="_blank">Carloseduardori</a></li>
+                <li><a href="https://www.linkedin.com/in/carlos-eduardo-ribeiro-do-patrocinio/" target="_blank">Carlos Eduardo</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
