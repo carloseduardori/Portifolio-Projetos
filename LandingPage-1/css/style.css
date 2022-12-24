@@ -133,7 +133,6 @@ main{
 }
 
 #descricao img{
-    fill: #008060;
     width: 44px;
     height: 44px;
 }
@@ -195,7 +194,7 @@ main{
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    background-color: #004c3f;
+    background-color: #008060;
     border-radius: 3px;
     margin-top: 10px;
     margin-bottom: 30px;
