@@ -26,7 +26,7 @@
             <div id="sobre">
                 <h1>Carlos Eduardo</h1>
                 <h2>Front-end Developer</h2>
-                <h3>Front-end developer em busca de projetos, <br> freelancer, e vaga de emprego</h3>
+                <h3>Front-end developer em busca de projetos, freelancer, e vaga de emprego, em constante aprendizado e buscando sempre melhorar</h3>
             </div>
             <div id="codigo">
                 <span><xmp>let button_menu = document.querySelector(".header_button");
@@ -57,8 +57,7 @@ function addEffectWriting(element, time) {
 
         writeSymbols();
     }
-}
-                    </xmp></span>
+}</xmp></span>
                 </div>
         </section>
 
@@ -117,6 +116,16 @@ let menu = document.querySelector(".menu");
 menuButton.addEventListener("click", function() {
   menu.classList.toggle("open");
 });
+
+function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 45 * i);
+    });
+  }
+  const titulo = document.querySelector('#codigo xmp');
+  typeWriter(titulo);
 </script>
 </body>
 </html>

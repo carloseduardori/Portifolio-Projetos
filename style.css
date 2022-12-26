@@ -87,17 +87,36 @@ nav a#menu{
     color: #F0E3CA;
     font-size: 18px;
     line-height: 21px;
+    width: auto;
 }
 
 #codigo{
     margin-top: 40px;
-    
+    height: 450px;
+    margin-right: 60px;
 }
 
 #codigo span{
     color: #A35709;
     opacity: 0.5;
 }
+
+#codigo xmp::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 
 #historia{
@@ -256,6 +275,13 @@ footer{
     Height: 25px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1114px){
+    #contatos ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav {
         display: block;
@@ -289,7 +315,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
     nav a#menu{
         display: flex;
     }
@@ -351,7 +377,8 @@ footer{
     }
 
     #sobre h3{
-        font-size: 15px;
+        font-size: 17px;
+        margin-right: 20px;
     }
 
     #codigo span{
@@ -360,12 +387,12 @@ footer{
     }
 
     #historia img{
-        padding-right: 30px;
+        margin-right: 110px;
     }
 
     #historia h1{
         font-size: 20px;
-        padding-right: 30px;
+        margin-right: 50px;
     }
 
     #habilidades{
@@ -427,5 +454,15 @@ footer{
         flex-direction: column;
         gap: 30px;
         margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #msg h2{
+        font-size: 16px;
+    }
+
+    #contatos ul{
+        margin-right: 25px;
     }
 }
