@@ -6,6 +6,12 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
+@font-face {
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impact Regular'), url('./fonts/impact.woff') format('woff');
+}
 
 body{
     background-color: #1B1A17;
@@ -24,11 +30,11 @@ nav{
     border-bottom: 2px solid #131211;
 }
 
-nav h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+nav xmp{
+    font-family: 'Impact Regular';
     line-height: 39px;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
     color: #FF8303;
 }
 
@@ -58,7 +64,7 @@ nav a:hover{
 #sobre{
     display: flex;
     flex-direction: column;
-    padding: 20px 150px 20px 90px;
+    padding: 20px 150px 20px 120px;
     gap: 16px;
 }
 
@@ -83,14 +89,16 @@ nav a:hover{
     line-height: 21px;
 }
 
-#foto{
+#codigo{
     margin-top: 40px;
+    
 }
 
-#foto span{
+#codigo span{
     color: #A35709;
     opacity: 0.5;
 }
+
 
 #historia{
     border-top: 2px solid #131211;
@@ -161,10 +169,40 @@ nav a:hover{
 }
 
 footer{
+    padding: 50px 0;
+    border-top: 2px solid #131211;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+}
+
+#msg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+    margin-right: 80px;
+    gap: 10px;
+}
+
+#msg xmp{
+    font-family: 'Impact Regular';
+    line-height: 39px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #FF8303;
+}
+
+#msg h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F0E3CA;
+}
+
+#contatos{
+    display: flex;
+    flex-direction: column;
+    
+    width: 530px;
+    gap: 20px;
 }
 
 #contatos h1{
@@ -175,7 +213,17 @@ footer{
 }
 
 #contatos ul{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
     list-style-type: none;
+    gap: 20px;
+}
+
+#contatos li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #contatos a{
@@ -184,4 +232,13 @@ footer{
     font-size: 18px;
     line-height: 25px;
     color: #FF8303;
+}
+
+#contatos a:hover{
+    text-decoration: underline;
+}
+
+#contatos img{
+    Width: 27px;
+    Height: 25px;
 }
