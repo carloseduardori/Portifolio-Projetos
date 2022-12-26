@@ -51,6 +51,10 @@ nav a:hover{
     color: #FF8303;
 }
 
+nav a#menu{
+    display: none;
+}
+
 #informacao{
     display: flex;
     align-items: center;
@@ -114,6 +118,7 @@ nav a:hover{
 
 #minhas-habilidades{
     border-bottom: 2px solid #131211;
+    padding-bottom: 100px;
 }
 
 #minhas-habilidades h1.titulo{
@@ -128,7 +133,7 @@ nav a:hover{
 #habilidades{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .card{
@@ -139,7 +144,6 @@ nav a:hover{
     width: 200px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
 }
 
 .card h1{
@@ -210,7 +214,6 @@ footer{
 #contatos{
     display: flex;
     flex-direction: column;
-    
     width: 530px;
     gap: 20px;
 }
@@ -251,4 +254,178 @@ footer{
 #contatos img{
     Width: 27px;
     Height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+    nav xmp{
+        margin-bottom: 15px;
+    }
+    #informacao{
+        display: flex;
+        flex-direction: column;
+    }
+    #habilidades{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 40px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #msg{
+        margin: 0;
+    }
+
+    #contatos{
+        margin-top: 80px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav a#menu{
+        display: flex;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 25px 55px 25px 25px;
+        align-items: center;
+    }
+
+    nav xmp{
+        font-size: 24px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 27%;
+        align-self: center;
+        gap: 60px;
+        padding: 100px 0px;
+        border-top: 2px solid #131211;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+    nav a{
+        font-size: 20px;
+        color: #F0E3CA;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    nav a:hover{
+        color: #FF8303;
+    }
+
+    .menu.open{
+        display: flex;
+    }
+
+    #sobre{
+        padding: 0;
+    }
+
+    #sobre h1{
+        font-size: 40px;
+    }
+
+    #sobre h2{
+        font-size: 26px;
+    }
+
+    #sobre h3{
+        font-size: 15px;
+    }
+
+    #codigo span{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    #historia img{
+        padding-right: 30px;
+    }
+
+    #historia h1{
+        font-size: 20px;
+        padding-right: 30px;
+    }
+
+    #habilidades{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        background-color: #21201D;
+        justify-content: left;
+        align-items: center;
+        height: 80px;
+        width: 400px;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .card img{
+        height: 35px;
+    }
+    
+    .card h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        color: #fff;
+        padding: 0;
+    }
+
+    #historia{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px 50px 60px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #msg{
+        margin: 0;
+    }
+
+    #contatos{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 80px 0px 10px 0px;
+    }
+
+    #contatos ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 15px;
+    }
 }

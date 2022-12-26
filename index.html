@@ -12,7 +12,8 @@
     <header>
         <nav>
             <h1><xmp></Carlos Eduardo></xmp></h1>
-            <ul>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
                 <li><a href="#informacao">Sobre Mim</a></li>
                 <li><a href="#minhas-habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Meus Projetos</a></li>
@@ -109,5 +110,13 @@ function addEffectWriting(element, time) {
             </ul>
         </div>
     </footer>
+<script>
+let menuButton = document.querySelector("#menu");
+let menu = document.querySelector(".menu");
+
+menuButton.addEventListener("click", function() {
+  menu.classList.toggle("open");
+});
+</script>
 </body>
 </html>
