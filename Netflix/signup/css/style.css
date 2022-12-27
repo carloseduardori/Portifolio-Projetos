@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+
+body{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px 15px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+header img{
+    height: 45px;
+    width: 167px;
+}
+
+#entrar a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    color: #333333;
+}
+
+#entrar:hover{
+    text-decoration: underline;
+}
+
+#plano{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px 400px 50px 400px;
+    padding: 50px;
+}
+
+#plano img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+#plano h3{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+}
+
+#plano h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+#plano p{
+    font-size: 18px;
+    color: #333333;
+}
+
+#plano input{
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    background-color: #e50914;
+    padding: 20px 125px;
+    border-radius: 3px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#plano .descricao img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.img{
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.paragrafos{
+    float: right;
+}
+
+footer{
+    font-size: 14px;
+    color: #737373;
+    background-color: #f3f3f3;
+    margin-top: 100px;
+    text-align: left;
+    padding: 40px 60px 0px 60px;
+    justify-content: center;
+    line-height: 30px;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer a{
+    color: #737373;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.numero{
+    font-size: 18px;
+}
+
+footer p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+ul{
+    display: inline-flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 30px 0 0;
+}
+
+#language2{
+    width: 150px;
+    height: 50px;
+    color: #737373;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    margin-right: 35px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#language2 option{
+    background-color: white;
+}

@@ -102,6 +102,17 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
         </section>
         <section id="projetos">
             <h1>Meus Projetos</h1>
+            <div id="sites">
+                <div id="shopify">
+                    <iframe src="./Shopify/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <button>VER PROJETO EM TELA CHEIA</button>
+                </div>
+                <div id="netflix">
+                    <iframe src="./Netflix/index.html" frameborder="0" height="100%" width="100%"></iframe>
+                    <button>VER PROJETO EM TELA CHEIA</button>
+                </div>
+            </div>
+            <button class="mais">VER MAIS</button>
         </section>
     </main>
     <footer>
@@ -131,7 +142,16 @@ let menu = document.querySelector(".menu");
 menuButton.addEventListener("click", function () {
     menu.classList.toggle("open");
 });
-    </script>
+
+const iframes = document.querySelectorAll('#sites iframe');
+const buttons = document.querySelectorAll('#sites button');
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    iframes[index].requestFullscreen();
+  });
+});
+</script>
 </body>
 
 </html>

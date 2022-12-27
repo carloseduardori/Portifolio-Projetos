@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/pagamentocartao.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="./img/Netflix_2015_logo.svg.png" alt="Netflix"></a>
+        <div id="entrar">
+            <a href="../logout/index.html" >Sair</a>
+        </div>
+    </header>
+    <main>
+        <div id="cabecalho">
+            <h3>PASSO <b>3</b> DE <b>3</b></h3>
+            <h1>Informe os dados do seu cartão de crédito ou débito</h1>
+            <div id="imagens">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/visa-v3.svg" alt="Cartao visa">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/mastercard-v2.svg" alt="Cartao mastercard">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/amex-v2.svg" alt="Cartao american express">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/elo-v2.svg" alt="Cartao elo">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/hipercard-v2.svg" alt="Cartao hipercard">
+            </div>
+        </div>
+        <div id="formulario">
+            <input type="text" placeholder="Nome" id="nome" maxlength="99" minlength="1">
+            <input type="text" placeholder="Sobrenome" id="sobrenome" maxlength="99">
+            <input type="tel" name="Numero do cartao" id="numerocartao" placeholder="Número do cartão" maxlength="16">
+            <input type="tel" placeholder="Data de validade (MM/AA)" id="validade" maxlength="5" pattern="\d{2}/\d{2}">
+            <input type="tel" placeholder="Codigo de segurança (CVV)" id="cvv" maxlength="3">
+            <h2 class="form">Escolha sua forma de pagamento preferida:</h2>
+            <form>
+                <input type="radio" name="opcao" id="credito" checked> 
+                <span class="form">Crédito</span>
+                <input type="radio" name="opcao" id="debito"> 
+                <span class="form">Débito</span>
+            </form>
+            <div id="planoescolhido">
+                <div class="preco"></div>
+                    <h2>R$18,90/mês</h2>
+                    <p>Plano Básico com anúncios</p>
+                <div id="trocar">
+                    <a href="./planform.html">Trocar</a>
+                </div>
+            </div>
+        </div>
+        <div id="final">
+            <p>Cartões que suportam transações de débito e de crédito poderão ser processados de ambas as formas.</p> <br> <br>
+            <p>Ao clicar no botão “Iniciar assinatura” abaixo, você concorda com nossos <a href="#"> Termos de Uso</a> e com nossa <a href="#">Declaração de Privacidade</a> , confirma ter mais de 18 anos e aceita que a <b>Netflix renove automaticamente sua assinatura e cobre o preço da assinatura (atualmente R$18,90/mês) da sua forma de pagamento até você cancelar. Você pode cancelar quando quiser para evitar cobranças futuras.</b> Para cancelar, acesse a página “Conta” e clique em “Cancelar assinatura”.</p>
+            <a href="#"><button>Iniciar assinatura</button></a>
+        </div>
+    </main>
+    <footer>
+        <p>Dúvidas? Ligue <a href="#" class="numero">0800 591 8942</a></p>
+        <ul>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Privacidade</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Preferências de cookies</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Netflix Shop</a></li>
+            <li><a href="#">Informações corporativas</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
+        <div id="linguagem2">
+            <select id="language2" name="linguage">
+            <option value="Portugues">✈ Português</option>
+            <option value="English">✈ English</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

@@ -13,9 +13,13 @@
     src: local('Impact Regular'), url('./fonts/impact.woff') format('woff');
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     background-color: #1B1A17;
-    font-family:  'Inconsolata', monospace;;
+    font-family:  'Inconsolata', monospace;
 }
 
 nav{
@@ -196,8 +200,10 @@ nav a#menu{
 #projetos{
     margin: 20px 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 300px;
+    align-items: center;
+    height: auto;
 }
 
 #projetos h1{
@@ -206,6 +212,54 @@ nav a#menu{
     line-height: 34px;
     text-align: center;
     color: #FF8303;
+    margin-bottom: 50px;
+}
+
+#projetos button.mais{
+    background-color: #FF8303;
+    border-style: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-weight: 700;
+    color: #fff;
+    font-family:  'Inconsolata', monospace;
+    font-size: 2rem;
+    box-shadow: 2px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+#projetos button.mais:hover{
+    background-color: #ce6903;
+}
+
+#sites{
+    display: flex;
+    gap: 50px;
+}
+
+#shopify, #netflix{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 55vh;
+    width: 41vw;
+    background-color: #a5e3b9;
+}
+
+#sites button{
+    height: 30px;
+    background-color: #FF8303;
+    border-style: none;
+    border-top: 3px solid #b45c05;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    order: -1;
+}
+
+#sites button:hover{
+    background-color: #e67606;
 }
 
 footer{
