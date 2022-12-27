@@ -32,6 +32,7 @@ nav xmp{
     font-size: 32px;
     letter-spacing: 2px;
     color: #FF8303;
+    margin-left: 42px;
 }
 
 nav ul{
@@ -64,7 +65,7 @@ nav a#menu{
 #sobre{
     display: flex;
     flex-direction: column;
-    padding: 20px 150px 20px 120px;
+    padding: 20px 90px 20px 90px;
     gap: 16px;
 }
 
@@ -85,23 +86,23 @@ nav a#menu{
 #sobre h3{
     font-weight: 400;
     color: #F0E3CA;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 21px;
     width: auto;
 }
 
 #codigo{
-    margin-top: 40px;
-    height: 450px;
-    margin-right: 60px;
+    margin: 40px 60px 60px 80px;
+    height: auto;
+
 }
 
-#codigo span{
-    color: #A35709;
-    opacity: 0.7;
-}
+#codigo pre{
+    filter: blur(1px);
+    opacity: 0.8;
+} 
 
-#codigo xmp::after {
+#codigo pre::after {
     content: '|';
     opacity: 1;
     margin-left: 5px;
@@ -116,7 +117,7 @@ nav a#menu{
     50% {
       opacity: 0;
     }
-  }
+}
 
 
 #historia{
@@ -126,6 +127,7 @@ nav a#menu{
     justify-content: center;
     align-items: center;
     padding: 50px 80px;
+    gap: 20px;
 }
 
 #historia h1{
@@ -205,14 +207,15 @@ footer{
     padding: 50px 0;
     border-top: 2px solid #131211;
     display: flex;
+    justify-content: space-between;
 }
 
 #msg{
     display: flex;
     flex-direction: column;
-    margin-left: 220px;
-    margin-right: 80px;
     gap: 10px;
+    margin-left: 90px;
+    margin-right: 150px;
 }
 
 #msg xmp{
@@ -235,6 +238,7 @@ footer{
     flex-direction: column;
     width: 530px;
     gap: 20px;
+    margin-right: 60px;
 }
 
 #contatos h1{
@@ -276,6 +280,12 @@ footer{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1114px){
+    nav ul{
+        gap: 25px;
+    }
+    #contatos{
+        width: auto;
+    }
     #contatos ul{
         display: flex;
         flex-direction: column;
@@ -284,7 +294,8 @@ footer{
 
 @media screen and (max-width: 768px) {
     nav {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
     nav xmp{
@@ -294,6 +305,12 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+    #codigo{
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
     #habilidades{
         display: flex;
         flex-wrap: wrap;
@@ -307,6 +324,10 @@ footer{
 
     #msg{
         margin: 0;
+    }
+
+    #msg xmp{
+        align-items: center
     }
 
     #contatos{
@@ -330,8 +351,7 @@ footer{
 
     nav xmp{
         font-size: 24px;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        margin: 30px 0px;
     }
 
     nav ul{
@@ -365,7 +385,7 @@ footer{
     }
 
     #sobre{
-        padding: 0;
+        padding: 60px;
     }
 
     #sobre h1{
@@ -381,9 +401,19 @@ footer{
         margin-right: 20px;
     }
 
+    #codigo{
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    #codigo pre{
+        filter: blur(0);
+        opacity: 0.5;
+    }
+
     #codigo span{
-        font-size: 10px;
-        margin-left: 5px;
+        font-size: 8px;
+        padding-left: 0px;
     }
 
     #historia img{
@@ -458,6 +488,16 @@ footer{
 }
 
 @media screen and (max-width: 375px){
+    nav{
+        padding: 20px 15px;
+        display: flex;
+    }
+    nav xmp{
+        width: 100px;
+        margin: 0;
+        font-size: 28px;
+    }
+
     #msg h2{
         font-size: 16px;
     }
