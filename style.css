@@ -247,7 +247,7 @@ nav a#menu{
 }
 
 #sites button{
-    height: 30px;
+    height: auto;
     background-color: #FF8303;
     border-style: none;
     border-top: 3px solid #b45c05;
@@ -518,6 +518,14 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 50px 0px 50px 60px;
+    }
+
+    #sites{
+        flex-direction: column;
+    }
+
+    #shopify, #netflix{
+        width: 90vw;
     }
 
     footer{
