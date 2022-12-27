@@ -52,7 +52,6 @@ body{
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-weight: 400;
 }
-
 button, .vamos{
     cursor: pointer;
 }
@@ -216,6 +215,10 @@ hr {
     justify-content: center;
 }
 
+#cartao2 .textos, #cartao4 .textos{
+    margin-left: 80px;
+}
+
 #cartao3{
     background-color: black;
     color: white;
@@ -279,7 +282,7 @@ hr {
     height: 75px;
     margin-bottom: 10px;
     padding: 0px 30px 0px 30px;
-    width: 60%;
+    width: 70vw;
     border-style: none;
     text-align: left;
 }
@@ -311,7 +314,7 @@ hr {
     border-style: none;
     padding: 15px 20px 10px 20px;
     border-radius: 3px;
-    width: 13%;
+    width: 160px;
 }
 footer{
     background-color: black;
@@ -320,9 +323,9 @@ footer{
 #final{
     background-color: black;
     color: #737373;
-    margin: 80px 220px 0px 220px;
+    margin: 80px 10vw 0px 10vw;
     padding-bottom: 20px;
-    font-size: 13.5px;
+    font-size: 13px;
 }
 #final a{
     text-decoration: none;
@@ -378,7 +381,7 @@ footer{
     color: white;
     margin-bottom: 10px;
     padding: 20px 30px 20px 30px;
-    width: 60%;
+    width: 70vw;
     border-style: none;
     text-align: left;
     display: none;
@@ -393,6 +396,137 @@ footer{
 .dropdown:focus + .dropdown-content{
     display: inline-block;
 }
+
+@media (max-width: 1130px){
+    #cabecalho img{
+        margin-right: 53vw;
+    }
+
+    #cartao2 .textos, #cartao4 .textos{
+        margin-left: 50px;
+    }
+    #cartao2 img, #cartao3 img{
+        width: 500px;
+        height: 400px;
+    }
+
+    #cartao3 .textos, #cartao5 img{
+        margin-right: 30px;
+    }
+    #final ul{
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px){
+    #cartao2,#cartao3,#cartao4,#cartao5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100vw;
+        padding: 40px 0px;
+    }
+    .textos{
+        width: 90vw;
+        text-align: center;
+        order: -1;
+    }
+    #container-cartao h1{
+        font-size: 40px;
+    }
+    #container-cartao p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #final{
+        margin: 80px 5vw 0px 5vw;
+    }
+    #final li{
+        line-height: 25px;
+    }
+    #final ul{
+        margin-right: 25px;
+        width: auto;
+    }
+}
+
+@media (max-width: 570px){
+    #promocao{
+        flex-wrap: wrap;
+    }
+    #container-cartao .textos{
+        margin: 0;
+    }
+    #cabecalho{
+        margin: 50px 10px;
+    }
+    #cabecalho img{
+        margin: 0px;
+        margin-right: 60px;
+    }
+    #logo img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    #language{
+        margin-right: 10px;
+    }
+    #cartao h1{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    #cartao h2{
+        font-size: 20px;
+    }
+    #cartao2 img{
+        margin: 0;
+    }
+
+    #cartao h3{
+        font-size: 16px;
+    }
+    #cartao4 img, #cartao5 img{
+        margin: 0;
+    }
+    #container-cartao img{
+        width: 90vw;
+        height: 280px;
+    }
+    #botoes button, .dropdown-content{
+        width: 100vw;
+    }
+    #cartao6 h1{
+        font-size: 35px;
+    }
+    #cartao input{
+        padding: 18px;
+    }
+    #cartao6 input, #cartao input.email{
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+    #cartao6 h3{
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 375px){
+    #cabecalho img{
+        margin-right: 25px;
+    }
+}
+@media (max-width: 320px){
+    #cabecalho img{
+        max-width: 90px;
+        margin-right: 0px;
+    }
+}
+
+
 
 
 

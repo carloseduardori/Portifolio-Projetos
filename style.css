@@ -238,12 +238,20 @@ nav a#menu{
     gap: 50px;
 }
 
+#sites h1{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
 #shopify, #netflix{
     display: flex;
-    flex-direction: column-reverse;
-    height: 55vh;
+    flex-direction: column;
+    height: 60vh;
     width: 41vw;
-    background-color: #a5e3b9;
+    background-color: #FF8303;
 }
 
 #sites button{
@@ -255,7 +263,7 @@ nav a#menu{
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
-    order: -1;
+    order: 1;
 }
 
 #sites button:hover{
