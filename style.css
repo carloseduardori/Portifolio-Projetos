@@ -176,6 +176,10 @@ nav a#menu{
     padding-top: 20px;
 }
 
+.card img {
+    transition: all 0.7s ease;
+}
+
 .card img.hover{
     display: none;
 }
@@ -186,6 +190,7 @@ nav a#menu{
 
 .card:hover > img.hover{
     display: block;
+    transform: scale(1.1);
 }
 
 #projetos{
@@ -403,7 +408,7 @@ footer{
 
     #codigo{
         margin: 0;
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
     #codigo pre{
