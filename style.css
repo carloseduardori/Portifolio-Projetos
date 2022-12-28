@@ -180,10 +180,6 @@ nav a#menu{
     padding-top: 20px;
 }
 
-.card img {
-    transition: all 0.7s ease;
-}
-
 .card img.hover{
     display: none;
 }
