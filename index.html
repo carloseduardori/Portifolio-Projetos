@@ -34,8 +34,8 @@
                 <h3>Front-end developer em busca de projetos, freelancer e vaga de emprego, em constante aprendizado e
                     buscando sempre melhorar.</h3>
             </div>
-            <div id="codigo">
-                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            <div id="codigo">                
+            <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
 let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
                         
 let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
@@ -68,7 +68,6 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
 }</pre></span>
             </div>
         </section>
-
         <section id="historia">
             <img src="./img/Logo.png" alt="Retangulo">
             <h1>Há alguns anos, me interessei por desenvolver sites e interfaces. Desde então, tenho aprimorado
@@ -159,21 +158,6 @@ button.addEventListener('click', () => {
     iframes[index].requestFullscreen();
 });
 });
-
-const links = document.querySelectorAll('.menu a');
-
-links.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const href = this.getAttribute('href');
-    const target = document.querySelector(href);
-    target.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  });
-});
-
 </script>
 </body>
 
