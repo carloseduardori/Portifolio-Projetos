@@ -218,7 +218,7 @@ nav a#menu{
 #projetos button.mais{
     background-color: #FF8303;
     border-style: none;
-    padding: 15px 25px;
+    padding: 15px 35px;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 60px;
@@ -249,7 +249,7 @@ nav a#menu{
 #shopify, #netflix{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 63vh;
     width: 41vw;
     background-color: #FF8303;
 }
@@ -258,16 +258,22 @@ nav a#menu{
     height: auto;
     background-color: #FF8303;
     border-style: none;
-    border-top: 3px solid #b45c05;
+    border: 3px solid #ca6b0b;
     color: white;
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
     order: 1;
+    padding: 5px 10px;
+}
+
+#sites .botoes{
+    display: flex;
+    justify-content: space-between;
 }
 
 #sites button:hover{
-    background-color: #e67606;
+    background-color: #e4790e;
 }
 
 footer{

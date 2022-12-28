@@ -106,12 +106,18 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
                 <div id="shopify">
                     <h1>PROJETO CLONE SITE SHOPIFY</h1>
                     <iframe src="./Shopify/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
-                    <button>VER PROJETO EM TELA CHEIA</button>
+                    <div class="botoes">
+                        <button>VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Shopify" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
                 </div>
                 <div id="netflix">
                     <h1>PROJETO CLONE SITE NETFLIX</h1>
                     <iframe src="./Netflix/index.html" frameborder="0" height="100%" width="100%"></iframe>
-                    <button>VER PROJETO EM TELA CHEIA</button>
+                    <div class="botoes">
+                        <button>VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Netflix" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
                 </div>
             </div>
             <button class="mais">VER MAIS</button>
@@ -137,7 +143,7 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
             </ul>
         </div>
     </footer>
-    <script>
+<script>
 let menuButton = document.querySelector("#menu");
 let menu = document.querySelector(".menu");
 
@@ -149,10 +155,25 @@ const iframes = document.querySelectorAll('#sites iframe');
 const buttons = document.querySelectorAll('#sites button');
 
 buttons.forEach((button, index) => {
-  button.addEventListener('click', () => {
+button.addEventListener('click', () => {
     iframes[index].requestFullscreen();
+});
+});
+
+const links = document.querySelectorAll('.menu a');
+
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const target = document.querySelector(href);
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   });
 });
+
 </script>
 </body>
 
