@@ -76,11 +76,20 @@ header img{
     text-decoration: underline;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 600px;
+}
+
 #plano{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 75px 400px 50px 400px;
     padding: 50px;
 }
 
@@ -192,3 +201,48 @@ ul{
 #language2 option{
     background-color: white;
 }
+
+@media (max-width: 600px){
+    main{
+        width: 100vw;
+    }
+    #plano{
+        padding: 50px 20px;
+    }
+    ul{
+        display: flex;
+        width: auto;
+    }
+}
+@media (max-width: 500px){
+   #plano{
+        padding: 50px 10px;
+   }
+}
+@media (max-width: 455px){
+   #plano{
+        padding: 50px 0;
+   }
+   .img {
+    margin-left: 50px;
+   }
+}
+@media (max-width: 360px){
+   .img {
+    margin-left: 30px;
+   }
+
+   #plano input{
+    padding: 20px 100px;
+   }
+}
+@media (max-width: 360px){
+   .img {
+    margin-left: 10px;
+   }
+
+   #plano input{
+    padding: 20px 80px;
+   }
+}
+

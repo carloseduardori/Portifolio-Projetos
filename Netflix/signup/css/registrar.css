@@ -78,11 +78,11 @@ header img{
 
 #plano{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 75px 440px 50px 440px;
+    margin-top: 5%;
     padding: 50px;
     text-align: center;
+    align-items: center;
 }
 
 #plano img{
@@ -177,4 +177,27 @@ ul{
 
 #language2 option{
     background-color: white;
+}
+
+@media (max-width: 768px){
+    ul{
+        margin: 0;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 505px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+}
+@media (max-width: 370px){
+    #plano input{
+        padding: 20px 90px;
+    }
+    #plano img{
+        height: 60px;
+        width: 250px;
+    }
 }

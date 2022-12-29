@@ -77,11 +77,20 @@ header img{
     text-decoration: underline;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 500px;
+}
+
 #cabecalho{
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 40px 450px 0px 450px;
 }
 
 #cabecalho img{
@@ -108,7 +117,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 10px 450px 3px 450px;
+    width: 100%;
 }
 
 #formulario input{
@@ -126,7 +135,6 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 20px 450px 0px 450px;
 }
 
 #final p{

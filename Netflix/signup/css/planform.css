@@ -76,11 +76,22 @@ header img{
     text-decoration: underline;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 900px;
+}
+
 #cabecalho{
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 20px 220px;
+    margin: 20px 0px;
+    width: 90vw;
 }
 
 #cabecalho img{
@@ -123,9 +134,9 @@ header img{
 
 #planos{
     display: flex;
-    justify-content: flex-end;
     gap: 80px;
-    margin-right: 221px;
+    margin-left: 300px;
+    margin-bottom: 25px;
     height: 120px;
     background-color: white;
 }
@@ -220,7 +231,7 @@ header img{
 }
 
 #descricao{
-    margin: 30px 210px 0px 210px;
+    width: 90vw;
 }
 #descricao .lista{
     list-style-type: none;
@@ -265,7 +276,7 @@ span.downloads, .downloads2{
 #final{
     font-size: 13px;
     color: #6e6e6e;
-    margin: 40px 215px 0 215px;
+    width: 90vw;
 }
 
 #final a{
@@ -293,6 +304,7 @@ span.downloads, .downloads2{
     height: 64px;
     width: 400px;
     margin: 15px 0 80px 30%;
+    text-align: center;
 }
 
 footer{
@@ -351,4 +363,47 @@ ul{
 
 #language2 option{
     background-color: white;
+}
+
+@media (max-width: 600px){
+    main{
+        width: 80vw;
+    }
+    ul{
+        display: flex;
+        width: auto;
+    }
+}
+@media (max-width: 950px){
+    #premium button, #padrao button, #basico button{
+        width: 95px;
+        height: 50px;
+        padding: 0px;
+    }
+    #planos{
+        gap: 20px;
+    }
+    
+}
+@media (max-width: 920px){
+    main{
+        width: 80vw;
+    }
+    #paragrafo input{
+        margin: 15px 0 80px 120px;
+    }
+}
+
+@media (max-width: 600px){
+    #paragrafo input{
+        font-size: 20px;
+        height: 64px;
+        width: 50vw;
+        text-align: center;
+    }
+}
+@media (max-width: 400px){
+    #paragrafo input{
+        margin: 15px 50px 85px 80px;
+    }
 }

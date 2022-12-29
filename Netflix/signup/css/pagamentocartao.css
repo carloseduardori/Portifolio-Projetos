@@ -77,11 +77,20 @@ header img{
     text-decoration: underline;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 500px;
+}
+
 #cabecalho{
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 40px 450px 0px 450px;
 }
 
 #cabecalho img{
@@ -108,7 +117,8 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 10px 450px 3px 450px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 #formulario input{
@@ -126,7 +136,6 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 20px 450px 0px 450px;
 }
 
 #final p{
@@ -278,4 +287,14 @@ ul{
 
 #language2 option{
     background-color: white;
+}
+
+@media (max-width: 600px){
+    main{
+        width: 85vw;
+    }
+    ul{
+        display: flex;
+        width: auto;
+    }
 }
