@@ -103,19 +103,19 @@ function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectW
         <section id="projetos">
             <h1>Meus Projetos</h1>
             <div id="sites">
-                <div id="shopify">
+                <div id="shopify" allowfullscreen>
                     <h1>PROJETO CLONE SITE SHOPIFY</h1>
                     <iframe src="./Shopify/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
                     <div class="botoes">
-                        <button>VER PROJETO EM TELA CHEIA</button>
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
                         <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Shopify" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
                     </div>
                 </div>
-                <div id="netflix">
+                <div id="netflix" allowfullscreen>
                     <h1>PROJETO CLONE SITE NETFLIX</h1>
                     <iframe src="./Netflix/index.html" frameborder="0" height="100%" width="100%"></iframe>
                     <div class="botoes">
-                        <button>VER PROJETO EM TELA CHEIA</button>
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
                         <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Netflix" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
                     </div>
                 </div>
@@ -151,15 +151,14 @@ menuButton.addEventListener("click", function () {
     menu.classList.toggle("open");
 });
 
-const iframes = document.querySelectorAll('#sites iframe');
-const buttons = document.querySelectorAll('#sites button');
+const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+const iframes = document.querySelectorAll('iframe');
 
-buttons.forEach((button, index) => {
-button.addEventListener('click', () => {
+botoesTelaCheia.forEach((botao, index) => {
+  botao.addEventListener('click', () => {
     iframes[index].requestFullscreen();
+  });
 });
-});
-
 </script>
 </body>
 
