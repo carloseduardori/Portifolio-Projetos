@@ -580,6 +580,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
+        padding: 20px 20px 50px 20px;
     }
 }
 
@@ -596,6 +597,10 @@ footer{
 
     #msg h2{
         font-size: 16px;
+    }
+
+    #contatos{
+        padding: 10px;
     }
 
     #contatos ul{
