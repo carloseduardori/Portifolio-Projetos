@@ -283,7 +283,7 @@ footer{
     padding: 50px 0;
     border-top: 2px solid #131211;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
 }
 
@@ -291,8 +291,6 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 90px;
-    margin-right: 150px;
 }
 
 #msg xmp{
