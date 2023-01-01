@@ -284,6 +284,7 @@ footer{
     border-top: 2px solid #131211;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 #msg{
