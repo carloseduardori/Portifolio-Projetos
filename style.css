@@ -603,6 +603,10 @@ footer{
         padding: 10px;
     }
 
+    #contatos a {
+        font-size: 17px;
+    }
+
     #contatos ul{
         margin-right: 0px;
     }
