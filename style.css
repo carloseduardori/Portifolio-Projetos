@@ -580,7 +580,6 @@ footer{
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        padding: 20px 50px 50px 50px;
     }
 }
 
