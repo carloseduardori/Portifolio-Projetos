@@ -403,7 +403,7 @@ footer{
 
     #habilidades{
         display: flex;
-        margin-right: 40px;
+        margin-right: 0px;
     }
     footer{
         display: flex;
@@ -518,6 +518,7 @@ footer{
         display: flex;
         width: 100vw;
         justify-content: center;
+        margin: 0;
     }
 
     .card{
