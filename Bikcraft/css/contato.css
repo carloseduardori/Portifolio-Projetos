@@ -1,0 +1,527 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; 
+} 
+
+body{
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+span{
+    color: #ffbb00;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease;
+    transition-property: border-bottom;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* MAIN */
+
+main{
+    background-color: #111111;
+    padding: 4rem 7.7rem;
+    box-shadow: inset 0 -300px #f7f7f7;
+}
+
+.introducao h2{
+    color: #fff;
+    font-size: 2.4rem;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+.introducao h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    height: 56rem;
+}
+
+.informacoes{
+    background-color: #000;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5rem 7rem;
+    font-family: 'Roboto';
+    position: relative;
+}
+
+.informacoes::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/dec.svg");
+    background-repeat: no-repeat;
+    width: 5.2rem;
+    height: 5.2rem;
+    bottom: 20px;
+    left: 20px;
+}
+
+.informacoes h2{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 6rem;
+}
+
+.informacoes p{
+    color: #cccccc;
+    position: relative;
+    margin-top: 1rem;
+}
+.informacoes p.icon::before{
+    content: "";
+    display: inline-block;
+    background-image: url('../img/local.svg');
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: -30px;
+}
+
+.informacoes a{
+    text-decoration: none;
+    color: #cccccc;
+    display: flex;
+    margin-top: 1rem;
+}
+.informacoes a.icon, a.icon2{
+    margin-top: 4rem;
+    position: relative;
+}
+
+.informacoes a.icon::before, a.icon2::before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.informacoes .sociais{
+    display: flex;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+.informacoes .sociais img{
+    color: #ffbb00;
+    fill: #ffbb00;
+}
+
+.informacoes a.icon::before{
+    background-image: url("../img/email.svg");
+}
+.informacoes a.icon2::before{
+    background-image: url("../img/telefone.svg");
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 2rem;
+    position: relative;
+}
+
+.form::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/dec.svg");
+    background-repeat: no-repeat;
+    width: 5.2rem;
+    height: 5.2rem;
+    bottom: 20px;
+    right: 20px;
+    transform: rotateY(180deg);
+}
+
+.form label{
+    margin-bottom: -20rem;
+}
+
+.form label.telefone{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.form input.telefone{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.form textarea, input#email{
+    grid-column: 1 / -1;
+}
+
+
+.form input, textarea{
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    grid-column: 1;
+}
+
+.form button{
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 5rem;
+    border-radius: 4px;
+    border: none;
+    max-width: max-content;
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: linear-gradient(#ebb105, #cf8d08);
+}
+
+/* SECAO LOJAS */
+
+.localizacao-lojas{
+    padding: 4rem 7.7rem;
+}
+
+.localizacao-lojas h1{
+    color: #111;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.lojas{
+    display: flex;
+    gap: 4rem;
+}
+
+.lojas img{
+    width: 100%;
+}
+
+.local1, .local2{
+    background-color: #fff;
+}
+
+.local-informacoes{
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.local1 h2, .local2 h2 {
+    color: #111;
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 3.5rem;
+    grid-column: 1 / -1;
+    margin-bottom: 3rem;
+}
+.local1 span, .local2 span{
+    color: #595959;
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    grid-column: 1;
+    border-left: 2px solid #ededed;
+}
+
+.local1 a, .local2 a{
+    color: #595959;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    grid-column: 2;
+    border-left: 2px solid #ededed;
+}
+
+.local1 p, .local2 p{
+    margin-top: 2rem;
+    color: #111;
+    grid-column: 1 / -1;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.local1 p::before, .local2 p::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url("../img/horario.svg");
+    width: 20px;
+    height: 20px;
+    left: -25px;
+}
+
+.email2{
+    grid-row: 2;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    background-color: #000;
+}
+
+footer li{
+    padding: 1rem;
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer hr{
+    border: 1px solid #111;
+    width: 30rem;
+}
+
+footer p{
+    color: #b2b2b2;
+    text-align: left;
+    grid-column: 1;
+}
+
+footer ul .sociais{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+@media (max-width: 950px){
+    main {
+        padding: 4rem 3rem;
+    }
+    .form {
+        padding: 2rem;
+        gap: 0px 1rem;
+    }
+    .informacoes {
+        padding: 5rem 5rem;
+    }
+    .localizacao-lojas {
+        padding: 4rem 3rem;
+    }
+}
+
+@media (max-width: 815px){
+    header{
+        padding: 3rem 4rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav ul li a{
+        background-color: #111111;
+        padding: 1rem 2rem;
+    }
+
+    .introducao h1{
+        font-size: 4rem;
+    }
+    .introducao h2{
+        font-size: 2rem;
+    }
+    .form{
+        height: 50rem;
+    }
+
+    .form button {
+        padding: 0.5rem 3rem;
+        border-radius: 4px;
+    }
+    .formulario{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .informacoes {
+        padding: 3rem 6rem;
+    }
+
+    .informacoes::after, .form::after {
+        display: none;
+    }
+    
+    .informacoes h2 {
+        margin-bottom: 2rem;
+    }
+
+    .informacoes a.icon, a.icon2, .informacoes .sociais {
+        margin-top: 3rem;
+    }
+
+    .localizacao-lojas h1 {
+        font-size: 4rem;
+    }
+
+    .local1 h2, .local2 h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .lojas{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 620px) {
+    header{
+        padding: 3rem 1rem;
+    }
+    nav ul li a{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    footer ul .sociais {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        gap: 0px 2rem;
+        position: relative;
+    }
+
+    .form label.telefone, .form input.telefone {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .form{
+        height: 60rem;
+    }
+
+    .introducao h2 {
+        font-size: 1.5rem;
+    }
+
+    .introducao h1 {
+        font-size: 3rem;
+    }
+
+    .localizacao-lojas h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 475px) {
+    header{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .informacoes {
+        padding: 3rem 3rem 3rem 6rem;
+    }
+    .local-informacoes {
+        padding: 2.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .local1 a, .local2 a {
+        grid-column: 1;
+        margin-top: 1rem;
+    }
+
+    .email2 {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 340px) {
+    nav ul{
+        gap: 1rem;
+    }
+
+    footer hr{
+        width: 25rem;
+    }
+    .introducao h1{
+        font-size: 3rem;
+    }
+    .introducao h2{
+        font-size: 1.5rem;
+    }
+    .informacoes {
+        padding: 3rem 1rem 3rem 4rem;
+    }
+}
+
+@media (max-width: 320px) {
+    nav ul{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        width: 10rem;
+        text-align: center;
+    }
+}

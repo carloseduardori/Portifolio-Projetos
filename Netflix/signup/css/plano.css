@@ -246,3 +246,9 @@ ul{
    }
 }
 
+@media (max-width: 320px) {
+    .img {
+        margin-left: 0px;
+    }
+}
+

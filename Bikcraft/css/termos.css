@@ -1,0 +1,222 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; 
+} 
+
+body{
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: #ffbb00;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease;
+    transition-property: border-bottom;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* MAIN */
+
+main{
+    background-color: #111111;
+    padding: 4rem 7.7rem;
+}
+
+.introducao h2{
+    color: #fff;
+    font-size: 2.5rem;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+.introducao h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.termos{
+    padding: 3rem 8rem;
+    max-width: 900px;
+}
+
+.termos h1{
+    color: #111111;
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+    font-weight: 600;
+}
+
+.termos p{
+    color: #2e2e2e;
+    line-height: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    background-color: #000;
+}
+
+footer li{
+    padding: 1rem;
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer hr{
+    border: 1px solid #111;
+    width: 30rem;
+}
+
+footer p{
+    color: #b2b2b2;
+    text-align: left;
+    grid-column: 1;
+}
+
+footer ul .sociais{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+@media (max-width: 815px){
+    header{
+        padding: 3rem 4rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav ul li a{
+        background-color: #111111;
+        padding: 1rem 2rem;
+    }
+    .introducao h1{
+        font-size: 4rem;
+    }
+    .introducao h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    header{
+        padding: 3rem 1rem;
+    }
+    nav ul li a{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .termos h1 {
+        font-size: 2rem;
+    }
+
+    .termos p {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 4rem 5rem;
+    }
+
+    .termos {
+        padding: 3rem 5rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    footer ul .sociais {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 475px) {
+    header{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 340px) {
+    nav ul{
+        gap: 1rem;
+    }
+
+    footer hr{
+        width: 25rem;
+    }
+    .introducao h1{
+        font-size: 3rem;
+    }
+    .introducao h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    nav ul{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        width: 10rem;
+        text-align: center;
+    }
+
+}

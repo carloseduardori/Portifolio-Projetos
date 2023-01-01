@@ -1,0 +1,817 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; 
+} 
+
+body{
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: #ffbb00;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease;
+    transition-property: border-bottom;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* PRINCIPAL */
+
+main{
+    display: flex;
+    background-color: #000;
+    padding: 0 6rem;
+    height: 75rem;
+    box-shadow: inset 0 -120px #fff;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+main h2{
+    color: #b2b2b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+main a{
+    text-decoration: none;
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+main a:hover{
+    background: linear-gradient(#ebb105, #cf8d08);
+}
+
+main a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: url('../img/dec.svg');
+    top: 5rem;
+    left: -8rem;
+}
+
+main img{
+    width: 52%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin: 0rem 2rem;
+}
+
+/* SECAO BICICLETAS */
+
+.bicicletas{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(28rem, 1fr));
+    padding: 4rem 2rem;
+    gap: 4rem;
+}
+
+.bicicletas h1.titulo{
+    color: #111111;
+    grid-column: 1/-1;
+    font-size: 6.2rem;
+    padding-left: 7rem;
+}
+
+.bicicleta1 h1, .bicicleta2 h1, .bicicleta3 h1{
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #111111;
+    position: relative;
+    padding: 0 1.5rem;
+    transition: 0.5s ease;
+}
+
+.bicicleta1 h1::before, .bicicleta2 h1::before, .bicicleta3 h1::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: #FFBB00;
+    position: absolute;
+    top: 1.5rem;
+    left: -0.4rem;
+    transition: 0.5s ease;
+}
+
+.bicicleta1:hover > h1::before,.bicicleta2:hover > h1::before, .bicicleta3:hover > h1::before{
+    content: "";
+    display: block;
+    width: 2.8rem;
+    height: 0.8rem;
+    background-color: #FFBB00;
+    position: absolute;
+    top: 1.5rem;
+    left: -0.4rem;
+}
+.bicicleta1:hover > h1,.bicicleta2:hover > h1, .bicicleta3:hover > h1{
+    padding: 0 3.5rem;
+}
+
+.bicicletas h2{
+    font-family: 'Roboto' ,sans-serif;
+    color: #595959;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+}
+
+.bicicletas img{
+    width: 100%;
+    object-fit: cover;
+    height: 40rem;
+    border-radius: 4px;
+}
+
+/* SECAO TECNOLOGIA */
+
+.tecnologia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px auto 130px;
+    background-color: #111;
+    padding: 6rem;
+    box-shadow: inset 0 -130px #fff, inset 0 130px #fff;;
+    gap: 2rem;
+}
+
+.informacoes{
+    grid-row: 2;
+}
+
+.tecnologia h1{
+    color: #fff;
+    font-size: 6rem;
+    line-height: 7rem;
+}
+
+.tecnologia h2, h3{
+    color: #b2b2b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.tecnologia h3{
+    font-size: 2.3rem;
+    line-height: 3.4rem;
+}
+
+.tecnologia a{
+    color: #ffbb00;
+    font-size: 2.6rem;
+    text-decoration: none;
+    border-bottom: 4px solid #ffbb00;
+}
+
+.tecnologia a:hover{
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.modelos{
+    margin-top: 6rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.motor h1, .rastreador h1{
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 400;
+   position: relative;
+   line-height: 5.5rem;
+}
+
+.motor h1::before{
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url('../img/eletrica.svg');
+    position: absolute;
+    top: -10px;
+}
+
+.rastreador h1::before{
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url('../img/rastreador.svg');
+    position: absolute;
+    top: -10px;
+}
+
+.motor p, .rastreador p{
+   color: #b2b2b2;
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+
+.tecnologia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    border-radius: 6px;
+}
+
+/* SECAO PARCEIROS */
+
+.parceiros h1{
+    color: #111111;
+    grid-column: 1/-1;
+    font-size: 6.2rem;
+    padding-left: 7rem;
+}
+
+.lista-parceiros{
+    gap: 4rem;
+    padding: 6rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.lista-parceiros img{
+    width: 90%;
+}
+
+/* SECAO DEPOIMENTO */
+
+.feedback{
+    background-color: #ffbb00;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40rem;
+}
+
+.foto{
+    height: 100%;
+    height: 40rem;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.depoimento{
+    padding: 8rem;
+    position: relative;
+}
+
+.depoimento::after{
+    content: "";
+    display: block;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: url("../img/decorange.svg") no-repeat;
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.depoimento h1{
+    font-family: 'Merriweather', serif;
+    color: #332200;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+}
+
+.depoimento p{
+    color: #664400;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 24px;
+    opacity: 0.8;
+    text-align: left;
+}
+
+/* SECAO SEGUROS */
+
+.seguros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #111111;
+    padding: 8rem;
+    gap: 5rem;
+    align-items: center;
+}
+
+.seguros h1{
+    color: #fff;
+    grid-column: 1/-1;
+    font-size: 6rem;
+    padding-left: 3rem;
+}
+
+.topo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem;
+}
+
+.topo h2, p{
+    grid-column: 3;
+    text-align: right;
+}
+
+.prata{
+    margin-top: 3rem;
+    background-color: #000;
+    padding: 3rem 5rem 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left;
+}
+
+.prata h1{
+    color: #9c9c9c;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.prata h2{
+    color: #fff;
+    height: 3rem;
+    font-size: 3.2rem;
+}
+
+.prata p{
+    color: #9c9c9c;
+    font-size: 1.4rem;
+}
+
+.prata .corpo h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 1.5rem 0px;
+    position: relative;
+}
+.prata .corpo h3::before{
+    content: "";
+    background: url('../img/lista.svg');
+    width: 1.3rem;
+    height: 0.9rem;
+    position: absolute;
+    left: -2rem;
+    top: 0.7rem;
+}
+
+.prata .corpo a{
+    color: #ededed;
+    background-color: #2e2e2e;
+    font-weight: 700;
+    font-size: 1.9rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+.prata .corpo a:hover{
+    background-color: #414040;
+}
+
+.ouro{
+    background-color: #000;
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left;
+}
+
+.ouro h1{
+    color: #ffbb00;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.ouro h2{
+    color: #fff;
+    font-size: 3.2rem;
+}
+
+.ouro p{
+    color: #9c9c9c;
+    font-size: 1.2rem;
+}
+
+.ouro .corpo h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 1.5rem 0px;
+    position: relative;
+}
+
+.ouro .corpo h3::before{
+    content: "";
+    background: url('../img/lista.svg');
+    width: 1.3rem;
+    height: 0.9rem;
+    position: absolute;
+    left: -2rem;
+    top: 0.7rem;
+}
+
+.ouro .corpo a{
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);;
+    font-weight: 700;
+    font-size: 1.9rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+.ouro .corpo a:hover{
+    background: linear-gradient(#ffb60d, #e7951a);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    background-color: #000;
+}
+
+footer li{
+    padding: 1rem;
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer hr{
+    border: 1px solid #111;
+    width: 30rem;
+}
+
+footer p{
+    color: #b2b2b2;
+    text-align: left;
+    grid-column: 1;
+}
+
+footer ul .sociais{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+@media (max-width: 1150px) {
+    .tecnologia{
+        padding: 3rem;
+    }
+    .tecnologia img{
+        width: 90%;
+    }
+    .depoimento::after {
+        bottom: 9rem;
+        right: 5rem;
+    }
+    .depoimento h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 1024px){
+    main{
+        padding: 1rem;
+    }
+    .bicicletas h1.titulo{
+        font-size: 4.5rem;
+        padding: 0;
+    }
+    .lista-parceiros{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+    .parceiros h1 {
+        font-size: 5.2rem;
+        padding-left: 4rem;
+    }
+    .lista-parceiros img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+    .bicicletas{
+        grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    }
+    .bicicleta3{
+        grid-column: 1/3;
+    }
+
+    .feedback {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    .depoimento::after {
+        bottom: 5rem;
+        right: 5rem;
+    }
+}
+@media (max-width: 815px){
+    header{
+        padding: 3rem 4rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav ul li a{
+        background-color: #111111;
+        padding: 1rem 2rem;
+    }
+
+    main{
+        flex-direction: column;
+        background-color: #111111;
+    }
+
+    main h1{
+        font-size: 3.5rem;
+    }
+    main h2{
+        font-size: 2.2rem;
+    }
+    main img{
+        margin: 2rem 2rem 2rem 0;
+        width: 100%;
+        height: 52%;
+    }
+
+    .bicicletas h1.titulo{
+        font-size: 3.5rem;
+    }
+
+    .bicicleta1 h1, .bicicleta2 h1, .bicicleta3 h1{
+        font-size: 2.4rem;
+    }
+
+    .informacoes{
+        grid-row: 1;
+    }
+    .tecnologia{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .tecnologia h2{
+        font-size: 1.5rem;
+    }
+
+    .tecnologia h1{
+        font-size: 4rem;
+    }
+
+    .tecnologia h3{
+        font-size: 1.8rem;
+    }
+
+    .modelos{
+        margin-top: 3rem;
+    }
+
+    .motor h1, .rastreador h1{
+        font-size: 2rem;
+    }
+    .motor p, .rastreador p{
+        font-size: 1.3rem;
+    }
+
+    .tecnologia img{
+        display: none;
+    }
+    .parceiros h1 {
+        font-size: 3rem;
+        padding-left: 3.5rem;
+    }
+    .lista-parceiros{
+        padding: 6rem;
+    }
+    .lista-parceiros img{
+        width: 70%;
+    }
+    .seguros {
+        padding: 3rem;
+        gap: 3rem;
+    }
+    .seguros h1 {
+        font-size: 4rem;
+        padding-left: 1rem;
+    }
+    .depoimento h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .seguros {
+        grid-template-columns: 1fr;
+    }
+
+    .seguros h1 {
+        font-size: 3rem;
+        padding-left: 0rem;
+    }
+
+    .prata, .ouro{
+        gap: 0;
+    }
+
+    .prata .corpo h3, .ouro .corpo h3 {
+        margin: 1rem 0px;
+    }
+
+    .prata .corpo a, .ouro .corpo a {
+        margin-top: 3rem;
+    }
+
+    .prata h2, .ouro h {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 620px) {
+    header{
+        padding: 3rem 1rem;
+    }
+    nav ul li a{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+    .modelos{
+        flex-direction: column;
+    }
+    .lista-parceiros img{
+        width: 100%;
+    }
+    .lista-parceiros{
+        padding: 4rem;
+    }
+    .parceiros h1 {
+        font-size: 2rem;
+        padding-left: 3.5rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    footer ul .sociais {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 475px) {
+    header{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .bicicletas{
+        grid-template-columns: 1fr;
+    }
+    .bicicleta3{
+        grid-column: 1;
+    }
+    .tecnologia h1 {
+        font-size: 3.5rem;
+    }
+    .prata, .ouro{
+        padding: 3rem 2.5rem 2rem 2.5rem;
+    }
+}
+@media (max-width: 340px) {
+    nav ul{
+        gap: 1rem;
+    }
+    .tecnologia, .informacoes{
+        padding: 0.5rem;
+    }
+    .informacoes{
+        flex-wrap: wrap;
+    }
+    .lista-parceiros{
+        padding: 1rem;
+    }
+    .parceiros h1 {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+    footer hr{
+        width: 25rem;
+    }
+}
+@media (max-width: 320px) {
+    nav ul{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        width: 10rem;
+        text-align: center;
+    }
+
+    .tecnologia h1 {
+        font-size: 3rem;
+    }
+    .seguros {
+        padding: 1rem;
+        gap: 3rem;
+    }
+}

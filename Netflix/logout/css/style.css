@@ -80,9 +80,10 @@ button{
 }
 
 #cartao{
-    margin: 20px 455px 0px 455px;
+    margin: 100px auto;
     background-color: white;
     text-align: left;
+    max-width: 500px;
     padding: 40px;
 }
 
@@ -161,4 +162,32 @@ footer{
 
 #language2 option{
     background-color: #aaa;
+}
+
+@media (max-width: 700px) {
+    #final {
+        margin: 0px 20px 20px 20px;
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width: 550px) {
+    #cartao {
+        margin: 100px auto;
+        background-color: white;
+        text-align: left;
+        max-width: 300px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    #final ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 0px;
+        width: auto;
+    }
+    
 }

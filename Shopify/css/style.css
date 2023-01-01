@@ -21,6 +21,7 @@ body{
     font-family: ShopifySans, Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #gratuita{

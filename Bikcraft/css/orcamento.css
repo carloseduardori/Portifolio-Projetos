@@ -1,0 +1,391 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; 
+} 
+
+body{
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+span{
+    color: #ffbb00;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease;
+    transition-property: border-bottom;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* MAIN */
+
+main{
+    background-color: #111111;
+    padding: 4rem 7.7rem;
+    box-shadow: inset 0 -600px #f7f7f7;
+}
+
+.introducao h2{
+    color: #fff;
+    font-size: 2.4rem;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+.introducao h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    height: 80rem;
+    margin-bottom: 9rem;
+}
+
+.informacoes{
+    background-color: #000;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5rem 7rem;
+    font-family: 'Roboto';
+}
+
+.informacoes::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/dec.svg");
+    background-repeat: no-repeat;
+    width: 5.2rem;
+    height: 5.2rem;
+    bottom: -41rem;
+    left: 11rem;
+}
+
+.informacoes span{
+    color: #b2b2b2;
+    font-size: 1.2rem;
+    position: relative;
+    display: block;
+}
+.informacoes span::before{
+    content: "";
+    width: 5px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    background-color: #ffbb00;
+    left: -10px;
+    top: 0.3rem;
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem 2rem;
+    position: relative;
+}
+
+.form::after{
+    content: "";
+    position: absolute;
+    background-image: url("../img/dec.svg");
+    background-repeat: no-repeat;
+    width: 5.2rem;
+    height: 5.2rem;
+    bottom: 20px;
+    right: 20px;
+    transform: rotateY(180deg);
+}
+
+.form #sobrenome, #numero, #bairro, #estado{
+    grid-column: 2;
+}
+
+.form #nome, #cep, #logradouro, #cidade{
+    grid-column: 1;
+}
+
+.form #cpf, #email{
+    grid-column: 1/-1;
+}
+
+.form #cep, #numero{
+    grid-row: 10;
+}
+
+.form #nome{
+    grid-row: 3;
+}
+.form #bairro{
+    grid-row: 12;
+}
+
+.form .grid{
+    grid-row: 11;
+    grid-column: 2;
+}
+
+.form #cidade, #estado{
+    grid-row: 14;
+}
+
+.form span{
+    grid-column: 1/-1;
+    padding-top: 2rem;
+    color: #404040;
+    font-size: 1.2rem;
+    position: relative;
+}
+.form span::before{
+    content: "";
+    width: 5px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    background-color: #ffbb00;
+    left: -10px;
+    top: 2.5rem;
+}
+
+.form input{
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+}
+
+.form button{
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.3rem 3rem;
+    border-radius: 4px;
+    border: none;
+    max-width: max-content;
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: linear-gradient(#ebb105, #cf8d08);
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    background-color: #000;
+}
+
+footer li{
+    padding: 1rem;
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer hr{
+    border: 1px solid #111;
+    width: 30rem;
+}
+
+footer p{
+    color: #b2b2b2;
+    text-align: left;
+    grid-column: 1;
+}
+
+footer ul .sociais{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+@media (max-width: 950px){
+    main {
+        padding: 4rem 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 815px){
+    header{
+        padding: 3rem 4rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav ul li a{
+        background-color: #111111;
+        padding: 1rem 2rem;
+    }
+
+    .introducao h1{
+        font-size: 4rem;
+    }
+    .introducao h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    header{
+        padding: 3rem 1rem;
+    }
+    nav ul li a{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .formulario {
+        height: 130rem;
+    }
+
+    .form {
+        border-radius: 0px 0px 8px 8px;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem 2rem;
+    }
+
+    .form #sobrenome, #numero, #bairro, #estado{
+        grid-column: 1;
+    }
+    
+    .form #nome, #cep, #logradouro, #cidade{
+        grid-column: 1;
+    }
+    
+    .form #cpf, #email{
+        grid-column: 1;
+    }
+    
+    .form #cep, #numero{
+        grid-row: auto;
+    }
+    
+    .form #nome{
+        grid-row: auto;
+    }
+    
+    .form #bairro{
+        grid-row: auto;
+    }
+    
+    .form .grid{
+        grid-row: auto;
+        grid-column: 1;
+    }
+    
+    .form #cidade, #estado{
+        grid-row: auto;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    footer ul .sociais {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 475px) {
+    header{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .form::after {
+        display: none;
+    }
+}
+
+@media (max-width: 340px) {
+    nav ul{
+        gap: 1rem;
+    }
+
+    footer hr{
+        width: 25rem;
+    }
+    .introducao h1{
+        font-size: 3rem;
+    }
+    .introducao h2{
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    nav ul{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        width: 10rem;
+        text-align: center;
+    }
+}

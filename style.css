@@ -231,7 +231,9 @@ nav a#menu{
 
 #sites{
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
+    padding: 50px;
 }
 
 #sites h1{
@@ -242,12 +244,16 @@ nav a#menu{
     margin: 0;
 }
 
-#shopify, #netflix{
+#shopify, #netflix, #bikcraft{
     display: flex;
     flex-direction: column;
     height: 63vh;
     width: 41vw;
     background-color: #FF8303;
+}
+
+#shopify iframe{
+    overflow: hidden;
 }
 
 #sites button{

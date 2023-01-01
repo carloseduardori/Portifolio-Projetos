@@ -1,0 +1,537 @@
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; 
+} 
+
+body{
+    font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color: #ffbb00;
+}
+
+/* CABEÇALHO */
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s ease;
+    transition-property: border-bottom;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* PRINCIPAL */
+
+main{
+    background-color: #111;
+    padding: 7.5rem;
+}
+
+main > h1{
+    color: #fff;
+    grid-column: 1/-1;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+}
+
+main > h2{
+    color: #fff;
+    font-size: 2.4rem;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+}
+
+.fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 3rem;
+}
+
+.fotos img.principal{
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.fotos img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.descricao h2{
+    font-size: 2.4rem;
+    color: #b2b2b2;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.descricao div{
+    display: flex;
+    align-items: center;
+}
+
+.descricao div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-top: 8px;
+    margin-left: 2rem;
+}
+
+.descricao div img{
+    width: 16px;
+    height: 16px;
+}
+
+.descricao span{
+    background-color: #000;
+    color: #9c9c9c;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    height: max-content;
+}
+
+.descricao a{
+    text-decoration: none;
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    display: block;
+    width: max-content;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    position: relative;
+    
+}
+
+.descricao a:hover{
+    background: linear-gradient(#ebb105, #cf8d08);
+}
+
+.itens p{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.descricao-itens{
+    background-color: #000;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2;
+    gap: 2rem;
+    border-radius: 4px;
+}
+
+.descricao-itens img{
+    width: 30px;
+    height: 30px;
+}
+
+.descricao-itens h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.descricao-itens p{
+    color: #b2b2b2;
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 0;
+}
+
+.ficha{
+    grid-column: 2;
+    margin-top: 4rem;
+}
+
+.ficha p{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.fichatecnica{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.fichatecnica ul{
+    list-style: none;
+}
+
+.fichatecnica ul.valor1{
+    color: #cccccc;
+}
+
+.fichatecnica ul.valor2{
+    color: #9c9c9c;
+}
+
+.fichatecnica ul li{
+    padding: 0.5rem;
+}
+
+/* SECAO BICICLETAS */
+
+.bicicletas{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    padding: 4rem 8.2rem 10rem 8.2rem;
+    gap: 4rem;
+}
+
+.bicicletas h1.titulo{
+    color: #111111;
+    grid-column: 1/-1;
+    font-size: 6.2rem;
+}
+
+.bicicleta1 h1, .bicicleta2 h1{
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #111111;
+    position: relative;
+    padding: 0 1.5rem;
+    transition: 0.5s ease;
+}
+
+.bicicleta1 h1::before, .bicicleta2 h1::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: #FFBB00;
+    position: absolute;
+    top: 1.5rem;
+    left: -0.4rem;
+    transition: 0.5s ease;
+}
+
+.bicicleta1:hover > h1::before,.bicicleta2:hover > h1::before{
+    content: "";
+    display: block;
+    width: 2.8rem;
+    height: 0.8rem;
+    background-color: #FFBB00;
+    position: absolute;
+    top: 1.5rem;
+    left: -0.4rem;
+}
+.bicicleta1:hover > h1,.bicicleta2:hover > h1{
+    padding: 0 3.5rem;
+}
+
+.bicicletas h2{
+    font-family: 'Roboto' ,sans-serif;
+    color: #595959;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+}
+
+.bicicletas img{
+    width: 100%;
+    object-fit: cover;
+    height: 40rem;
+    border-radius: 4px;
+}
+
+/* SECAO MENSAGEM */
+
+.mensagem{
+    display: flex;
+    background-color: #111;
+    padding: 0 6rem;
+    height: 85rem;
+    box-shadow: inset 0 -120px #000, inset 0 120px #fff;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0rem;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mensagem h1{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+.mensagem h2{
+    color: #b2b2b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+.mensagem a{
+    text-decoration: none;
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.mensagem a:hover{
+    background: linear-gradient(#ebb105, #cf8d08);
+}
+
+.mensagem img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    margin: 0rem 2rem;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    background-color: #000;
+}
+
+footer li{
+    padding: 1rem;
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer hr{
+    border: 1px solid #111;
+    width: 30rem;
+}
+
+footer p{
+    color: #b2b2b2;
+    text-align: left;
+    grid-column: 1;
+}
+
+footer ul .sociais{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+
+@media (max-width: 950px){
+    main {
+        padding: 4rem 3rem;
+    }
+}
+
+@media (max-width: 815px){
+    header{
+        padding: 3rem 4rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav ul li a{
+        background-color: #111111;
+        padding: 1rem 2rem;
+    }
+
+    h1.titulo, .bicicletas h1.titulo {
+        font-size: 4rem;
+        padding-left: 1rem;
+    }
+
+    main > h2 {
+        font-size: 2rem;
+    }
+
+}  
+
+@media (max-width: 780px) {
+    h1.titulo, .bicicletas h1.titulo {
+        font-size: 3rem;
+        padding-left: 0rem;
+    }
+    main > h2 {
+        font-size: 1.5rem;
+    }
+    .mensagem h2 {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .principal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .fotos {
+        justify-content: flex-end;
+    }
+    .fotos img.principal {
+        width: 100%;
+        height: 40rem;
+    }
+}
+
+@media (max-width: 620px) {
+    header{
+        padding: 3rem 1rem;
+    }
+    nav ul li a{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    footer ul .sociais {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bicicletas {
+        grid-template-columns: 1fr;
+    }
+    .mensagem img{
+        display: none;
+    }
+
+    .mensagem{
+        height: 70rem;
+        padding: 2rem;
+    }
+
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0rem;
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 475px) {
+    header{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .bicicletas {
+        padding: 4rem 4rem 10rem 4rem;
+    }
+    .fotos img.principal {
+        width: 90%;
+        height: auto;
+    }
+    h1.titulo, .bicicletas h1.titulo {
+        font-size: 3rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 340px) {
+    nav ul{
+        gap: 1rem;
+    }
+
+    footer hr{
+        width: 25rem;
+    }
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+    .fotos img {
+        width: 90%;
+        height: auto;
+    }
+    main {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    nav ul{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        width: 10rem;
+        text-align: center;
+    }
+    .bicicletas {
+        padding: 4rem 2rem 10rem 2rem;
+    }
+}
