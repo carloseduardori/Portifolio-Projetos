@@ -367,7 +367,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 970px) {
     nav {
         display: flex;
         flex-direction: column;
@@ -376,9 +376,26 @@ footer{
     nav xmp{
         margin-bottom: 15px;
     }
+}
+
+@media screen and (max-width: 835px) {
+    #sites{
+        flex-direction: column;
+    }
+
+    #shopify, #netflix, #bikcraft{
+        width: 80vw;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 768px) {
     #informacao{
         display: flex;
         flex-direction: column;
+    }
+
+    #projetos button.mais {
+        margin-top: 40px;
     }
 
     #codigo{
@@ -536,14 +553,6 @@ footer{
         padding: 50px 0px 50px 60px;
     }
 
-    #sites{
-        flex-direction: column;
-    }
-
-    #shopify, #netflix{
-        width: 90vw;
-    }
-
     footer{
         display: flex;
         flex-direction: column;
@@ -570,6 +579,28 @@ footer{
     }
 }
 
+@media screen and (max-width: 450px){
+    #sobre {
+        padding: 20px 0px 20px 30px;
+        gap: 8px;
+    }
+
+    #sobre h1 {
+        font-size: 35px;
+    }
+
+    #sobre h2 {
+        font-size: 24px;
+    }
+
+    #sites {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 20px 50px 50px 50px;
+    }
+}
+
 @media screen and (max-width: 375px){
     nav{
         padding: 20px 15px;
@@ -586,6 +617,14 @@ footer{
     }
 
     #contatos ul{
-        margin-right: 25px;
+        margin-right: 0px;
+    }
+    #shopify, #netflix, #bikcraft{
+        width: 85vw;
+        height: 400px;
+    }
+
+    #sites button{
+        height: 100%;
     }
 }
