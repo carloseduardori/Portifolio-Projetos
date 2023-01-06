@@ -36,7 +36,7 @@ você pode verificar a documentação do GitHub [Criando uma Pull Request](https
 ## 🤝 Contribuintes
 
 ## 📝 Licença
-Este projeto está sob licença. Verifique a [LICENÇA](LICENSE.txt) para obter mais detalhes.
+Este projeto está sob licença. Verifique a [LICENÇA](LICENSE) para obter mais detalhes.
 
 
-[⬆ Volte para o topo!](#Portifolio-Projetos)<br>
+[⬆ Volte para o topo!](https://github.com/carloseduardori/Portifolio-Projetos)<br>
