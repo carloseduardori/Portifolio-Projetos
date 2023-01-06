@@ -1,6 +1,6 @@
 <h1 align="center">Portifolio</h1>
 
-> Este é meu portifolio e nele há alguns projetos que desenvolvi totalmente do zero sem ficar copiando codigo da internet, se quiser dar uma olhada agradeço <a href="https://carloseduardori.github.io/Portifolio-Projetos/">Visite a página</a>
+> Este é meu portifolio e nele há alguns projetos que desenvolvi totalmente do zero sem ficar copiando codigo da internet, se quiser dar uma olhada agradeço <a href="https://carloseduardori.github.io/Portifolio-Projetos/">Visite a página</a> <br>
 > Caso quiser dar uma olhada no meu linkedin e se interessar <a href="https://www.linkedin.com/in/carlos-eduardo-ribeiro-do-patrocinio/">Linkedin</a>
 
 <p align="center">
