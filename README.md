@@ -2,8 +2,9 @@
 
 > Este é meu portifolio e nele há alguns projetos que desenvolvi totalmente do zero sem ficar copiando codigo da internet, se quiser dar uma olhada agradeço <a href="https://carloseduardori.github.io/Portifolio-Projetos/">Visite a página</a>
 
-
-![readme](https://user-images.githubusercontent.com/81213149/176450922-5b90b8aa-bde3-4fbb-a2cf-c23e8c012e67.png)
+<p align="center">
+  <img width="600 height="400 src="ezgif.com-gif-maker.gif">
+</p>
 
 <div align="center">
  <h3 align="center">Tecnologias utilizadas:</h3>
