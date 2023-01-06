@@ -233,6 +233,7 @@ nav a#menu{
 #sites{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 50px;
     padding: 50px;
 }
@@ -245,16 +246,12 @@ nav a#menu{
     margin: 0;
 }
 
-#shopify, #netflix, #bikcraft{
+#shopify, #netflix, #bikcraft, #wildbeast{
     display: flex;
     flex-direction: column;
     height: 63vh;
     width: 41vw;
     background-color: #FF8303;
-}
-
-#shopify iframe{
-    overflow: hidden;
 }
 
 #sites button{
@@ -276,7 +273,7 @@ nav a#menu{
 }
 
 #sites button:hover{
-    background-color: #e4790e;
+    background-color: #d4700b;
 }
 
 footer{
@@ -381,7 +378,7 @@ footer{
         flex-direction: column;
     }
 
-    #shopify, #netflix, #bikcraft{
+    #shopify, #netflix, #bikcraft, #wildbeast{
         width: 80vw;
         height: 450px;
     }
@@ -610,7 +607,7 @@ footer{
     #contatos ul{
         margin-right: 0px;
     }
-    #shopify, #netflix, #bikcraft{
+    #shopify, #netflix, #bikcraft, #wildbeast{
         width: 85vw;
         height: 400px;
     }
