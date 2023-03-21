@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Uber';
+    src: url(../fonts/UberMoveTextBold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Uber';
+    src: url(../fonts/UberMoveTextMedium.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Uber';
+    src: url(../fonts/UberMoveTextRegular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Uber';
+    src: url(../fonts/UberMoveTextLight.otf);
+    font-weight: 300;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Uber', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-color: #000000;
+}
+
+/* NAVBAR */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5.7rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.4s all;
+}
+
+nav ul li a:hover{
+    background-color: #333333;
+}
+
+nav ul li a.uber{
+    font-weight: 400;
+    font-size: 2.3rem;
+    letter-spacing: -1px;
+}
+
+nav ul li a.empresa{
+    position: relative;
+}
+
+nav ul li a.empresa::after{
+    content: url(../img/svgexport-1.svg);
+    top: 2px;
+    left: 10px;
+    position: relative;
+}
+
+nav ul li a.linguagem,nav ul li a.produtos{
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a.cadastra{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s all;
+}
+
+nav ul li a.cadastra:hover{
+    background-color: #E2E2E2;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: 50rem;
+    padding: 4rem 7rem;
+}
+
+footer div.paginas{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.paginas ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+footer div.paginas ul h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+footer div.paginas ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+footer div.redesocial{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+footer div.redesocial div.redes{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.redesocial div.redes a{
+    padding: 1.4rem 1.5rem;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+
+footer div.redesocial div.redes a:hover{
+    background-color: #333333;
+}
+
+footer div.redesocial div.redes a img{
+    height: 16px;
+}
+
+
+footer div.redesocial div.informacoes ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+footer div.redesocial div.informacoes ul li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}

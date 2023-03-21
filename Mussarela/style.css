@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu h1 a {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.menu h1 a:hover {
+    color: rgb(233, 1, 1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(214, 213, 213);
+}
+
+.container {
+    background-image: linear-gradient(to bottom, transparent 0%, black 120%), url(https://receitasapetitosas.com/wp-content/uploads/2022/07/Pizza-de-mussarela-uma-receita-incrivel-para-hoje-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.informacoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem 5rem;
+    text-align: center;
+    color: white;
+}
+
+.informacoes h1 {
+    font-size: 3rem;
+}
+
+.informacoes h3 {
+    font-weight: 500;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.botoes a.cardapio {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: red;
+    padding: 1rem 3.2rem 1rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.botoes a.cardapio ion-icon,
+a.contato ion-icon {
+    position: absolute;
+    right: 20px;
+}
+
+.botoes a.contato {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 1rem 3.2rem 1rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.botoes a.cardapio:hover,
+a.contato:hover {
+    transform: scale(1.1);
+}
+
+.cardapio-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cardapio-menu>h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.opcoes {
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.opcao {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 2rem 2rem;
+    border-radius: 14px;
+    background-color: rgba(255, 0, 0, 0.904);
+    color: white;
+}
+
+.opcao h1 {
+    text-align: center;
+    color: white;
+}
+
+.opcao span {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.opcao img {
+    margin: 0 auto;
+    max-width: 220px;
+    max-height: 200px;
+    border-radius: 8px;
+}
+
+.opcao ul {
+    margin-bottom: 1rem;
+}
+
+.opcao ul li {
+    list-style-type: none;
+}
+
+.opcao a {
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.8rem 0rem;
+    font-size: 1.1rem;
+    margin-top: auto;
+    background-color: white;
+    transition: 0.4s;
+    justify-self: flex-end;
+}
+
+.opcao a:hover {
+    transform: scale(1.1);
+}
+
+#sobre {
+    border-top: 2px solid black;
+    margin-top: 5rem;
+}
+
+#sobre>h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.sobre {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre p {
+    text-align: center;
+}
+
+.sobre img {
+    border-radius: 16px;
+}
+
+#contato {
+    border-top: 2px solid black;
+    margin-top: 5rem;
+}
+
+#contato h1 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.container2 {
+    display: flex;
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.localizacao {
+    text-align: center;
+}
+
+.localizacao iframe{
+    width: 600px;
+    height: 450px;
+}
+
+.contatos ul li {
+    list-style-type: none;
+}
+
+
+footer {
+    margin-top: 5rem;
+    background-color: white;
+    border-top: 2px solid black;
+    padding: 2rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer ul a {
+    text-decoration: underline;
+    color: black;
+}
+
+
+@media (max-width: 1300px) {
+    .menu {
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container2{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .sobre p{
+        margin: 0px 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu{
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .informacoes{
+        padding: 10rem 3rem;
+    }
+    .localizacao iframe{
+        width: 400px;
+        height: 350px;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .informacoes{
+        padding: 10rem 1rem;
+    }
+
+    .sobre img{
+        width: 300px;
+    }
+
+    .contatos{
+        margin: 0px 2rem;
+    }
+
+    .informacoes h1, .cardapio-menu>h1, #sobre>h1, #contato h1 {
+        font-size: 2.2rem;
+    }
+
+    .localizacao h2{
+        font-size: 1.2rem;
+    }
+
+    .opcao h1{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 400px){
+    .localizacao iframe{
+        width: 300px;
+        height: 300px;
+    }
+}
