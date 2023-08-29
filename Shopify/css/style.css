@@ -30,13 +30,13 @@ body{
     align-items: center;
     background-color: #a5e3b9;
     font-size: 17px;
-    color: black;
+    color: #000;
     padding: 20px 0px;
     text-align: center;
 }
 
 #gratuita a{
-    color: black;
+    color: #000;
     font-weight: 700;
 }
 
@@ -91,14 +91,14 @@ main{
     padding: 20px;
     border-radius: 3px;
     font-size: 16px;
-    color: black;
+    color: #000;
     margin-bottom: 8px;
 }
 
 #cartao button{
     height: 50px;
     width: 450px;
-    color: white;
+    color: #fff;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
@@ -110,7 +110,7 @@ main{
 #cartao p{
     font-size: 12px;
     line-height: 18px;
-    color: white;
+    color: #fff;
 }
 
 #informacoes{
@@ -146,7 +146,7 @@ main{
 
 #descricao {
     color: #6b7177;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -192,7 +192,7 @@ main{
 #final button{
     height: 50px;
     width: 280px;
-    color: white;
+    color: #fff;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
