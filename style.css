@@ -227,6 +227,7 @@ nav a#menu{
 }
 
 #projetos button.mais:hover{
+    color: #fff;
     background-color: #ce6903;
 }
 
