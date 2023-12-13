@@ -15,6 +15,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -54,6 +55,7 @@ nav a{
 
 nav a:hover{
     color: #FF8303;
+    transition: all 0.2s;
 }
 
 nav a#menu{
@@ -228,6 +230,7 @@ nav a#menu{
 
 #projetos button.mais:hover{
     background-color: #ce6903;
+    transition: all 0.2s;
 }
 
 #sites{
@@ -258,22 +261,25 @@ nav a#menu{
     height: auto;
     background-color: #FF8303;
     border-style: none;
-    border: 3px solid #ca6b0b;
+    border: 2px solid #FFF;
     color: white;
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
     order: 1;
     padding: 5px 10px;
+    border-radius: 6px;
 }
 
 #sites .botoes{
     display: flex;
     justify-content: space-between;
+    padding: 5px;
 }
 
 #sites button:hover{
     background-color: #d4700b;
+    transition: all 0.2s;
 }
 
 footer{
